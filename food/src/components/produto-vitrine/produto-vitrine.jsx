@@ -1,9 +1,10 @@
 import "./produto-vitrine.css";
 import foto from "../../assets/hamburguer.png"
+import bag from "../../assets/bag-black.png";
 
-function ProdutoVitrine(){
+function ProdutoVitrine(props){
     return <div className="produto-box text-center">
-        <img src={foto} alt="" />
+        <img src={foto} alt="foto" />
 
         <div>
             <h2>Spicy Burguer</h2>
@@ -12,7 +13,8 @@ function ProdutoVitrine(){
         </div>
 
         <div>
-            <button>
+            <button className="btn btn-cart">
+                <img src={bag} className="icon" />
                 Adicionar
             </button>
         </div>
