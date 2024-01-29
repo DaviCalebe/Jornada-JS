@@ -10,8 +10,7 @@
 }
 
 .footer-card-valor{
-    margin-top: 20px;
-    margin-bottom: 23px;
+    margin: 20px 25px 23px 25px;
     display: flex;
     justify-content: space-between;
 }

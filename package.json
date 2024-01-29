@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "react-dock": "^0.6.0",
-    "react-router-dom": "^6.21.3"
-  }
-}
