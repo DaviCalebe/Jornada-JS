@@ -1,0 +1,37 @@
+{
+	"info": {
+		"_postman_id": "a2935084-c6c8-4b09-ab90-1d3831786fb0",
+		"name": "Pedidos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "8426445"
+	},
+	"item": [
+		{
+			"name": "Listar Pedidos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3001/pedidos"
+			},
+			"response": []
+		},
+		{
+			"name": "Inserir Pedido",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\r\n{\r\n    \"id_usuario\": 1,\r\n    \"nome\": \"Heber Stein Mazutti\", \r\n    \"email\": \"heber@teste.com.br\", \r\n    \"fone\": \"(11) 0000-0000\", \r\n    \"endereco\": \"Av. Paulista, 1500 - Apto 62\",\r\n    \"bairro\": \"Bela Vista\", \r\n    \"cidade\": \"São Paulo\", \r\n    \"uf\": \"SP\", \r\n    \"cep\": \"05010-000\", \r\n    \"total\": 59.70,\r\n    \"itens\": [{\r\n        \"id_produto\": 1,\r\n        \"qtd\": 2,\r\n        \"vl_unitario\": 24.90,\r\n        \"vl_total\": 49.80\r\n    },\r\n    {\r\n        \"id_produto\": 7,\r\n        \"qtd\": 1,\r\n        \"vl_unitario\": 9.90,\r\n        \"vl_total\": 9.90\r\n    }]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:3001/pedidos"
+			},
+			"response": []
+		}
+	]
+}
