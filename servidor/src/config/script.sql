@@ -25,7 +25,8 @@ create table pedido(
 	cidade varchar(50),
 	uf varchar(2),
 	cep varchar(10),	
-	total decimal(9,2)	
+	total decimal(9,2),
+	dt_pedido date
 );
 
 create table pedido_item(
