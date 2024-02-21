@@ -13,6 +13,6 @@ app.use(routeProduto);
 app.use(routePedido);
 
 
-app.listen(3001, function(){
-    console.log("Servidor executando na porta 3001");
+app.listen(5173, function(){
+    console.log("Servidor executando na porta 5173");
 });
