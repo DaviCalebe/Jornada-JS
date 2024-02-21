@@ -6,8 +6,8 @@
 }
 
 .produto-cart-box img{
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 
@@ -28,15 +28,15 @@
 
 .footer-produto-btn{
     border: 1px solid #cacaca;
-    padding: 10px 15px;
+    padding: 10px 10px;
     border-radius: 0px;
     background-color: #fff;
     cursor: pointer;
 }
 
 .footer-produto-qtd{
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .footer-produto-preco{
