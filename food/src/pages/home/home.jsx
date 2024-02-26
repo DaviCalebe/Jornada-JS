@@ -10,8 +10,8 @@ function Home(){
     useEffect(() => {
         api.get("/produtos")
         .then((resp) => {
-/*             setProdutos(resp.data);
- */        })
+            setProdutos(resp.data);
+        })
         .catch((err) => {
             alert('Erro ao carregar produtos');
         })
