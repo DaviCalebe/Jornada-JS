@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/navbar.jsx";
 import "./historico.css";
 import api from "../../services/api.js";
+import axios from "axios";
 
 function Historico(){
 
@@ -10,8 +11,8 @@ function Historico(){
     useEffect(() => {
         api.get("/pedidos")
         .then((resp) => {
-/*             setPedidos(resp.data);
- */        })
+            setPedidos(resp.data);
+        })
         .catch((err) => {
             alert('Erro ao carregar pedidos');
         })

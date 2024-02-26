@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Navbar from "../../components/navbar/navbar.jsx";
 import ProdutoVitrine from "../../components/produto-vitrine/produto-vitrine.jsx";
 import api from "../../services/api.js";
+import axios from "axios";
 
 function Home(){
 
@@ -28,14 +29,14 @@ function Home(){
         </div>
 
         <div className="text-center">
-            {
-                produtos.map(function(prod){
-                    return <ProdutoVitrine key={prod.id.produto}
-                    id={prod.id_produto}
-                    nome={prod.nome}
-                    descricao={prod.descricao}
-                    preco={prod.preco}
-                    foto={prod.foto} />
+            {   produtos.length > 0 &&
+                    produtos.map(function(prod){
+                        return <ProdutoVitrine key={prod.id.produto}
+                        id={prod.id_produto}
+                        nome={prod.nome}
+                        descricao={prod.descricao}
+                        preco={prod.preco}
+                        foto={prod.foto} />
                 })
             }
         </div>
