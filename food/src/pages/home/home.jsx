@@ -31,7 +31,7 @@ function Home(){
         <div className="text-center">
             {   produtos.length > 0 &&
                     produtos.map(function(prod){
-                        return <ProdutoVitrine key={prod.id.produto}
+                        return <ProdutoVitrine key={prod.id_produto}
                         id={prod.id_produto}
                         nome={prod.nome}
                         descricao={prod.descricao}
