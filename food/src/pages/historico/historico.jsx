@@ -28,18 +28,20 @@ function Historico(){
 
             <div className="box-pedido">
                 <table>
-                    {
-                        pedidos.map( function(ped){
-                            return <tr key={ped.id_pedido}>
-                                    <td><strong>Pedido {ped.id_pedido}</strong></td>
-                                    <td className="text-light">{ped.dt_pedido}</td>
-                                    <td className="text-red">{new Intl.NumberFormat('pt-BR',
-                                     {style: 'currency', currency: "BRL"}).format(ped.total)}</td>
-                                </tr>
-                            
-                        })
+                    <tbody>
+                        {
+                            pedidos.map( function(ped){
+                                return <tr key={ped.id_pedido}>
+                                        <td><strong>Pedido {ped.id_pedido}</strong></td>
+                                        <td className="text-light">{ped.dt_pedido}</td>
+                                        <td className="text-red">{new Intl.NumberFormat('pt-BR',
+                                        {style: 'currency', currency: "BRL"}).format(ped.total)}</td>
+                                    </tr>
+                                
+                            })
 
-                    }
+                        }
+                    </tbody>
                 </table>
             </div>
         </div>
