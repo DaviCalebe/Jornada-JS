@@ -81,6 +81,11 @@ a{
     background-color: #c43829;
 }
 
+.btn-checkout[disabled]{
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}
+
 .container{
     margin-left: 30px;
     margin-right: 30px;

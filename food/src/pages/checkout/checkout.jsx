@@ -79,6 +79,13 @@ function Checkout(){
         }
     }, []);
 
+    useEffect(function(){
+        if (nome && email && fone && cep && endereco && bairro && cidade && uf && cartItems.length > 0)
+            setLiberar(true)
+        else
+            setLiberar(false);
+    }, [nome, email, fone, cep, endereco, bairro, cidade, uf]);
+
     return <>
     <Navbar />
 
@@ -180,8 +187,14 @@ function Checkout(){
                 </div>
 
                 <div className="checkout_button">
-                    <button onClick={FinalizarPedido}
-                    className="btn-checkout" disabled>Finalizar Pedido</button>
+                    {
+                        liberar ?
+                            <button onClick={FinalizarPedido}
+                            className="btn-checkout">Finalizar Pedido</button>
+                        :
+                        <button onClick={FinalizarPedido}
+                        className="btn-checkout" disabled>Finalizar Pedido</button>
+                    }
                 </div>
             </div>
         </div>

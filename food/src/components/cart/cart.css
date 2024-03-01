@@ -22,3 +22,10 @@
     width: 32px;
     cursor: pointer;
 }
+
+.cart-empty{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
